@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(199, 210, 195);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.todo_heading h1{
+    margin-left: 1rem;
+}
+
+.navbar .todo_heading h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.navbar .about a h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.navbar .about a h3:hover{
+    color: grey;
+}
