@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from './MyComponents/Navbar'
-import ToDo_List from './MyComponents/ToDo_List'
+import LearnUseState from './assets/components/learUseState'
 function App() {
   return (
     <>
-    <Navbar/>
-    <ToDo_List/>
+      <LearnUseState/>
     </>
   )
 }
