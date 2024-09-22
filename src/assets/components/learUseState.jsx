@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useRef } from "react";
 
 function LearnUseState(){
 
@@ -11,7 +12,6 @@ function LearnUseState(){
 
     function changeLight(){
         
-
         if(light === "OFF"){
             controlLight("ON")
             setBgColor('yellow')
@@ -38,6 +38,11 @@ function LearnUseState(){
             setVisible("Hide")
             setDisplay("block")
         }
+    }
+
+    const inputRef = useRef(null)
+    function HandleButtonClick(){
+        inputRef.current.click()
     }
     return(
         <div className="flex flex-col items-center p-6">
@@ -74,7 +79,15 @@ function LearnUseState(){
 
             {/* Show and Hide Elements */}
             <h1 className="text-purple-400 font-bold text-2xl" style={{display: Display}}>You Are Cute :)</h1>
-            <button className="bg-slate-500 px-3 py-1 m-4 rounded-sm  text-white font-bold" onClick={() => HandleVisibility()}>{isvisible}</button>
+            <button className="bg-slate-500 px-3 py-1 m-4 rounded-sm  text-white font-bold" 
+            onClick={HandleVisibility}>{isvisible}</button>
+
+            <br />
+            <br />
+
+            {/* change button */}
+            <button onClick={HandleButtonClick} className="bg-[rgb(93,93,255)] text-white font-semibold py-1 px-2 rounded-md shadow hover:bg-[rgb(66,66,201)] my-2">Change Image</button>
+            <input type="file" className="hidden" ref={inputRef}/>
         </div>
     )
 }
