@@ -88,6 +88,10 @@ function LearnUseState(){
             {/* change button */}
             <button onClick={HandleButtonClick} className="bg-[rgb(93,93,255)] text-white font-semibold py-1 px-2 rounded-md shadow hover:bg-[rgb(66,66,201)] my-2">Change Image</button>
             <input type="file" className="hidden" ref={inputRef}/>
+
+            <br />
+            <br />
+            
         </div>
     )
 }
