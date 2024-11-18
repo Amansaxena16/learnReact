@@ -1,4 +1,16 @@
+import { useContext } from "react";
+import { FormPreviewContext } from "../../context/FormContext";
+
 function Form() {
+  const {previewText, setPreviewText} = useContext(FormPreviewContext)
+
+  function onchangeTextPreview(e){
+    const {name, value} = e.target;
+    setPreviewText({
+      ...previewText, [name]:value
+    })
+  } 
+
   return (
     <div>
       <hr />
@@ -19,19 +31,15 @@ function Form() {
               </label>
               <input
                 type="text"
-                id="projectName"
                 name="projectName"
                 placeholder="Enter project name"
                 className="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200"
+                onChange={onchangeTextPreview}
               />
             </div>
 
-            <button
-              type="button"
-              className="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 transition"
-            >
-              Add Project
-            </button>
+            <button type="button"className="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 transition">Add +</button>
+
           </form>
         </div>
       </div>
