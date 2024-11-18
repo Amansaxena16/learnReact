@@ -62,10 +62,8 @@ function LearnUseState(){
             <br />
             <br />
 
-            {/* Real Time Input Field  */}
+            {/* Real Time Input Field changer */}
             <h1 className="font-bold text-2xl my-1">{text? text:"Enter Your Text"}</h1>
-            <p className="font-bold text-2xl my-1"></p>
-            <span className="font-bold text-2xl my-1"></span>
             <input 
                 className="border-2 border-sky-500 w-48"
                 type="text"
