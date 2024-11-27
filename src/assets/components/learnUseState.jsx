@@ -42,7 +42,7 @@ function LearnUseState(){
 
     const inputRef = useRef(null)
     function HandleButtonClick(){
-        inputRef.current.click()
+        inputRef.current.click() 
     }
     return(
         <div className="flex flex-col items-center p-6">
