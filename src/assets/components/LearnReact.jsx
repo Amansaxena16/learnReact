@@ -20,8 +20,7 @@ function LearnReact(){
         <div className="w-full h-full" style={{background: color}}>
 
             {/* this is how we use the variable in react --> { } */}
-            this is running by {username}!! <br /> <br />
-
+            <h1 className="text-center text-2xl text-green-300 font-bold mb-4">this is running by {username}!! </h1>
 
             <div className="flex justify-center m-4">
                 <h1>Counter Value : {Counter}</h1> 
@@ -36,12 +35,12 @@ function LearnReact(){
             </div>
 
             <div className="flex items-center justify-evenly">
-                <Button onClick={() => setColor("black")} value="Black" bg="blue"/>
+                <Button onClick={() => setColor("black")} value="Black" bg="Black"/>
                 <Button onClick={() => setColor("blue")} value="Blue" bg="blue"/>
-                <Button onClick={() => setColor("red")} value="red" bg="blue"/>
-                <Button onClick={() => setColor("pink")} value="pink" bg="blue"/>
-                <Button onClick={() => setColor("skyblue")} value="sky Blue" bg="blue"/>
-                <Button onClick={() => setColor("olive")} value="olive" bg="blue"/>
+                <Button onClick={() => setColor("red")} value="red" bg="red"/>
+                <Button onClick={() => setColor("pink")} value="pink" bg="pink"/>
+                <Button onClick={() => setColor("skyblue")} value="sky Blue" bg="skyblue"/>
+                <Button onClick={() => setColor("olive")} value="olive" bg="olive"/>
 
             </div>
 
