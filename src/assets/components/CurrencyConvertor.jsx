@@ -5,11 +5,19 @@ import Button from "./button/Button"
 
 function CurrencyConvertor(){
 
-    // useCurrencyInfo(base, target)
+    const [to, setTo] = useState('usd')
+    const [from, setFrom] = useState('inr')
+
+    // const currencyInfo = useCurrencyInfo(to, from)
+    // const options = Object.keys(currencyInfo)
+
     return(
-        <div className="bg-black py-8">
-           <InputBox className={"w-2/5"} label={"From"}/>
-           <InputBox className={"w-2/5"} label={"TO"}/>
+        // <div className="bg-black py-8">
+        //    <InputBox className={"w-2/5"} label={to}/>
+        //    <InputBox className={"w-2/5"} label={from}/>
+        // </div>
+        <div>
+            i can do this and i will do it!!
         </div>
     )
 }
