@@ -9,6 +9,8 @@ import Contact from './assets/components/contact/Contact.jsx'
 import Layout from './assets/components/Layout.jsx'
 import About from './assets/components/about/About.jsx'
 import Github from './assets/components/github/Github.jsx'
+import Fun from './assets/components/fun/Fun.jsx'
+import UserContextProvider from './context/UserContextProvider.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact/>} />
       <Route path='github' element={<Github/>} />
+      <Route path='fun' element={<Fun/>} />
     </Route>
   )
 )
@@ -24,6 +27,8 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
+    <UserContextProvider>
     <RouterProvider router={router} />
+    </UserContextProvider>
   </React.StrictMode>,
 )
