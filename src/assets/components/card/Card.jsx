@@ -11,7 +11,7 @@ function Card(properties){
         <div className="flex flex-col py-3 px-3 pb-10">
           <div className="flex justify-between ">
             <h1 className="font-bold text-white">{properties.title || "FILL THE TITLE"}</h1>
-            <h1 className="text-white">Price</h1>
+            <h1 className="text-white">Price</h1> 
           </div>
           <div className="flex  justify-between items-center">
             <p className="text-white">{properties.sno || "FILL THE SNO."}</p>
